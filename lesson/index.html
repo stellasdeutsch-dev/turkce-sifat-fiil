@@ -1,0 +1,944 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="description" content="Слова «который» в турецком нет. Есть три суффикса. Гайд на 7 минут с конструктором, озвучкой и тестом — Alterna Türkçe.">
+<meta property="og:title" content="Который по-турецки: -en, -dik, -ecek">
+<meta property="og:description" content="Слова «который» в турецком нет. Есть три суффикса. Гайд на 7 минут с конструктором, озвучкой и тестом — Alterna Türkçe.">
+<meta name="theme-color" content="#EDEDEA">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect width=%2732%27 height=%2732%27 rx=%278%27 fill=%27%2325D22F%27/%3E%3Crect x=%276%27 y=%2710%27 width=%2720%27 height=%274%27 rx=%272%27/%3E%3Crect x=%2710%27 y=%2718%27 width=%2716%27 height=%274%27 rx=%272%27/%3E%3C/svg%3E">
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}</style>
+<title>Который по-турецки: -en, -dik, -ecek — гайд Alterna</title>
+<link rel="preload" href="../assets/fonts/onest-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../assets/fonts/onest-latin.woff2" as="font" type="font/woff2" crossorigin>
+<style>@font-face{font-family:'Onest';font-style:normal;font-weight:300 700;font-display:swap;src:url(../assets/fonts/onest-cyrillic.woff2) format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116}
+@font-face{font-family:'Onest';font-style:normal;font-weight:300 700;font-display:swap;src:url(../assets/fonts/onest-latin.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+</style>
+<script defer src="../assets/gsap-bundle.min.js"></script>
+
+<style>
+:root{
+  --bg:#EDEDEA;--paper:#fff;--ink:#0B0B0B;--mute:#6E6E6A;--line:#DCDCD7;
+  --pink:#FF6FB2;--green:#25D22F;--yellow:#FFB420;--violet:#5B4CFF;--terra:#C97A60;
+  --r:22px;--sh:0 1px 0 rgba(0,0,0,.04),0 22px 44px -26px rgba(0,0,0,.35);
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.5 Onest,system-ui,-apple-system,sans-serif;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+img,video{max-width:100%;display:block}
+a{color:inherit}
+button{font:inherit;color:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding:0 16px}
+section{padding:76px 0;position:relative}
+.ic{width:1em;height:1em;flex:none;vertical-align:-.14em}
+.kick{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:600;letter-spacing:-.005em;margin:0 0 14px}
+.kick::before{content:'';width:9px;height:9px;border-radius:3px;background:var(--green)}
+.kick.p::before{background:var(--pink)}.kick.y::before{background:var(--yellow)}.kick.v::before{background:var(--violet)}
+.mega{font-weight:700;letter-spacing:-.058em;line-height:.9;font-size:clamp(46px,13vw,140px);margin:0}
+.h2{font-weight:700;letter-spacing:-.05em;line-height:.93;font-size:clamp(38px,9.6vw,92px);margin:0 0 20px}
+.h3{font-weight:700;letter-spacing:-.04em;line-height:1;font-size:clamp(26px,6vw,40px);margin:0 0 10px}
+.lead{font-size:clamp(18px,4.6vw,23px);line-height:1.34;letter-spacing:-.015em;max-width:34ch;margin:0 0 14px}
+.lead b,.txt b{font-weight:700}
+.txt{font-size:17px;line-height:1.5;max-width:56ch;margin:0 0 12px}
+.mute{color:var(--mute)}
+.wd{display:inline-block}
+/* pills: Get · sheet · done */
+.pl{display:inline-flex;align-items:center;justify-content:center;font-weight:700;letter-spacing:-.035em;padding:.1em .4em .16em;border-radius:.3em;line-height:1;white-space:nowrap}
+.pl.pink{background:var(--pink)}.pl.green{background:var(--green)}.pl.yellow{background:var(--yellow)}.pl.violet{background:var(--violet);color:#fff}.pl.ink{background:var(--ink);color:#fff}
+.pl.box{background:#fff;color:var(--ink);border:.075em solid var(--ink);border-radius:0;position:relative}
+.pl.box::after{content:'';position:absolute;right:-.12em;bottom:-.12em;width:.15em;height:.15em;background:var(--ink)}
+.tag{display:inline-flex;align-items:center;gap:6px;padding:6px 12px;border-radius:999px;background:#fff;font-size:14px;font-weight:600;box-shadow:var(--sh)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:16px 24px;border-radius:999px;border:0;background:var(--ink);color:#fff;font-weight:600;font-size:17px;text-decoration:none;cursor:pointer;transition:scale .2s,background .2s}
+.btn:active{scale:.97}
+.btn.green{background:var(--green);color:var(--ink)}.btn.pink{background:var(--pink);color:var(--ink)}.btn.white{background:#fff;color:var(--ink)}.btn.violet{background:var(--violet)}
+.btn.line{background:transparent;color:inherit;box-shadow:inset 0 0 0 2px currentColor}
+.card{background:var(--paper);border-radius:var(--r);padding:22px;box-shadow:var(--sh)}
+.say{display:inline-grid;place-items:center;width:34px;height:34px;border-radius:50%;border:0;background:var(--bg);cursor:pointer;flex:none;transition:background .2s,scale .2s}
+.say:hover{background:var(--green)}.say:active{scale:.9}.say.on{background:var(--green)}
+.rv{transform:translateY(26px);transition:transform .8s cubic-bezier(.2,.8,.2,1)}
+.rv.in{transform:none}
+html.gs .rv{transition:none}
+/* progress + top bar */
+.prog{position:fixed;left:0;top:0;height:3px;width:100%;background:var(--green);transform-origin:0 50%;transform:scaleX(0);z-index:60}
+.top{position:sticky;top:0;z-index:50;background:rgba(237,237,234,.9);border-bottom:1px solid rgba(0,0,0,.05)}
+@media(min-width:900px){.top{backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);background:rgba(237,237,234,.72)}}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:58px}
+.logo{display:inline-flex;align-items:center;gap:8px;font-weight:700;font-size:21px;letter-spacing:-.05em;text-decoration:none}
+.logo svg{width:26px;height:16px}
+.top .btn{padding:9px 16px;font-size:14px}
+/* HERO billboard */
+.hero{padding:18px 0 40px}
+.wall{position:relative;overflow:hidden;border-radius:4px;aspect-ratio:4/5;background:
+  repeating-linear-gradient(90deg,rgba(0,0,0,.035) 0 1px,transparent 1px 46px),
+  linear-gradient(180deg,#e9e8e4,#dcdbd6 60%,#d2d1cb);}
+@media(min-width:760px){.wall{aspect-ratio:16/8.4}}
+.wall .ground{position:absolute;left:0;right:0;bottom:0;height:9%;background:linear-gradient(#cfcdc6,#bdbbb3)}
+.leaves{position:absolute;inset:-12%;pointer-events:none;filter:blur(9px);opacity:.42;transform-origin:30% 0}
+.leaves.b{filter:blur(16px);opacity:.28;transform-origin:80% 0}
+.sway{animation:sway 7s ease-in-out infinite alternate}
+.sway.b{animation-duration:9s;animation-delay:-3s}
+@keyframes sway{from{transform:rotate(-1.6deg) translateX(-1%)}to{transform:rotate(1.8deg) translateX(1.5%)}}
+.sign{position:absolute;left:0;right:0;top:0;bottom:6%;margin:auto;height:max-content;width:min(84%,720px);background:#fff;padding:7% 6% 5%;box-shadow:0 30px 50px -22px rgba(0,0,0,.45),0 0 0 6px #f4f4f2,0 0 0 7px #cfcfca}
+.sign::after{content:'';position:absolute;inset:0;pointer-events:none;background:radial-gradient(120% 90% at 85% 10%,rgba(0,0,0,.09),transparent 60%);mix-blend-mode:multiply}
+.sign-pills{display:flex;justify-content:center;flex-wrap:wrap;gap:.08em;font-size:clamp(23px,7.2vw,62px);min-height:1.25em;perspective:600px}
+.sign-pills .pl{transform-origin:50% 50% -10px}
+.sign-ru{text-align:center;margin:.7em 0 1.4em;font-size:clamp(14px,3.6vw,20px);font-weight:500;letter-spacing:-.02em;min-height:1.4em}
+.sign-foot{display:flex;justify-content:space-between;align-items:center;font-weight:700;letter-spacing:-.04em;font-size:clamp(13px,3.4vw,19px)}
+.sign-foot span:last-child{font-weight:600;font-size:.78em}
+.walker{position:absolute;bottom:4%;height:58%;left:-14%;filter:blur(5px);opacity:.75;animation:walk 16s linear infinite}
+@keyframes walk{from{transform:translateX(0)}to{transform:translateX(150vw)}}
+@media(hover:none){.walker{display:none}}
+.hero-txt{margin-top:28px}
+.hero-txt .mega .pl{font-size:.92em;vertical-align:.04em}
+.meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+/* thread story */
+.thread{display:grid;gap:14px;max-width:620px}
+.post{background:#fff;border-radius:18px;padding:18px 18px 14px;box-shadow:var(--sh);font-size:17px;line-height:1.45}
+.post header{display:flex;align-items:center;gap:10px;margin-bottom:8px;font-size:14px}
+.ava{width:34px;height:34px;border-radius:50%;background:var(--ink);color:#fff;display:grid;place-items:center;font-weight:700;font-size:13px;letter-spacing:-.03em}
+.post header b{font-weight:700}.post header span{color:var(--mute)}
+.post p{margin:0 0 8px}
+.post .n{display:block;text-align:right;color:var(--mute);font-size:13px}
+.post .tr{font-weight:600;background:var(--bg);padding:1px 6px;border-radius:6px}
+.post .loud{font-weight:700;letter-spacing:-.02em}
+.stamp{display:inline-block;margin-top:6px;transform:rotate(-2deg)}
+/* manifesto with stickers */
+.mani{font-weight:700;letter-spacing:-.06em;line-height:1.06;font-size:clamp(44px,12.4vw,132px);margin:0;text-align:center}
+.mani .st{display:inline-block;position:relative}
+.stk{position:absolute;z-index:2;font-size:clamp(12px,2.6vw,20px);letter-spacing:-.02em;white-space:nowrap}
+.stk.add{right:-.4em;top:-1.1em;padding:.25em .7em;border-radius:999px;background:var(--green);font-weight:700;box-shadow:0 0 0 3px #fff}
+.stk.cb{left:-.5em;top:-.6em;width:1.9em;height:1.9em;border-radius:.4em;background:var(--violet);display:grid;place-items:center;color:#fff;box-shadow:0 0 0 3px #fff}
+.stk.cb svg{width:62%;height:62%}
+.stk.pac{right:-1.4em;top:-1.6em;width:3em;height:3em}
+.abc{display:inline-flex}
+.abc i{width:1.7em;height:1.7em;border-radius:50%;display:grid;place-items:center;font-style:normal;font-weight:700;margin-left:-.35em;box-shadow:0 0 0 2px #fff;font-size:1em}
+.abc i:nth-child(1){background:var(--green);margin:0}.abc i:nth-child(2){background:var(--pink)}.abc i:nth-child(3){background:var(--yellow)}
+.stk.abcs{left:6%;bottom:-1.3em}
+.pacman{width:100%;height:100%;border-radius:50%;background:conic-gradient(from 120deg,transparent 0 60deg,var(--yellow) 60deg);animation:chomp .5s ease-in-out infinite alternate;display:grid;place-items:center}
+.pacman b{font-size:.5em;font-weight:700;letter-spacing:-.03em;transform:translate(10%,0)}
+@keyframes chomp{from{background:conic-gradient(from 115deg,transparent 0 70deg,var(--yellow) 70deg)}to{background:conic-gradient(from 88deg,transparent 0 4deg,var(--yellow) 4deg)}}
+/* order demo */
+.order{margin-top:26px}
+.ord-tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px}
+.chip{border:0;border-radius:999px;padding:8px 14px;background:#fff;font-weight:600;font-size:14px;cursor:pointer;box-shadow:inset 0 0 0 1.5px var(--line)}
+.chip.on{background:var(--ink);color:#fff;box-shadow:none}
+.stage{background:#fff;border-radius:var(--r);box-shadow:var(--sh);padding:26px 18px 20px;overflow:hidden}
+.lang{display:flex;align-items:center;gap:8px;font-size:13px;font-weight:600;color:var(--mute);margin-bottom:14px}
+.lang b{color:var(--ink)}
+.row{display:flex;flex-wrap:wrap;gap:10px;font-size:clamp(24px,6.6vw,52px);min-height:1.5em;align-items:center}
+.row .pl{will-change:transform}
+.ord-ctl{display:flex;gap:10px;align-items:center;margin-top:22px;flex-wrap:wrap}
+.arrow-note{font-size:14px;color:var(--mute)}
+/* dark question + sheet */
+.dark{background:#000;color:#fff}
+.dark .mute{color:#9a9a96}
+.qrules{display:grid;gap:10px;margin:22px 0 30px;max-width:720px}
+.qrule{display:flex;align-items:baseline;gap:14px;padding:14px 0;border-top:1px solid #242424;font-size:clamp(18px,4.6vw,24px);letter-spacing:-.02em;line-height:1.25}
+.qrule .pl{font-size:.95em;flex:none;min-width:3.6em}
+.qrule small{display:block;font-size:14px;color:#9a9a96;letter-spacing:0;margin-top:4px}
+.sheet{background:#fff;color:var(--ink);border-radius:18px;overflow:hidden;font-size:15px;position:relative}
+.sheet-h{display:flex;align-items:center;gap:10px;padding:12px 14px;border-bottom:1px solid var(--line)}
+.sheet-h .pl{font-size:15px}
+.sheet-h span{margin-left:auto;color:var(--violet);font-weight:600;font-size:14px}
+.sheet table{width:100%;border-collapse:collapse}
+.sheet td,.sheet th{padding:11px 12px;border-bottom:1px solid #eee;text-align:left;vertical-align:middle}
+.sheet th{font-size:12px;font-weight:600;color:var(--mute)}
+.sheet td:first-child{width:28px;color:#b6b6b0;font-variant-numeric:tabular-nums;font-size:13px}
+.sheet td .pl{font-size:15px}
+.sheet .who{color:var(--mute);font-size:14px}
+.sheet .tr{font-weight:700;letter-spacing:-.02em}
+.sheet tr.hot td{background:#F1EFFF}
+.cursor{position:absolute;width:26px;height:26px;left:0;top:0;pointer-events:none;z-index:3;filter:drop-shadow(0 2px 3px rgba(0,0,0,.3))}
+@media(max-width:560px){.sheet .hide-s{display:none}}
+/* three cards */
+.three{display:grid;gap:16px;margin-top:28px}
+@media(min-width:900px){.three{grid-template-columns:repeat(3,1fr)}}
+.sx{background:#fff;border-radius:var(--r);box-shadow:var(--sh);overflow:hidden;display:flex;flex-direction:column}
+.sx-h{display:flex;align-items:center;gap:8px;padding:14px 18px;font-weight:600;font-size:15px}
+.sx-h .dots{margin-left:auto;color:#c4c4be;letter-spacing:2px}
+.sx-v{height:210px;background:#F3F3F1;margin:0 14px;border-radius:14px;position:relative;display:grid;place-items:center;overflow:hidden}
+.sx-b{padding:18px}
+.sx-b .big{font-size:52px;font-weight:700;letter-spacing:-.06em;line-height:1;margin:0 0 6px}
+.sx-b .f{font-size:14px;color:var(--mute);margin:0 0 14px}
+.sx-b .f code{font:inherit;font-weight:700;color:var(--ink)}
+.ex{display:flex;align-items:center;gap:10px;padding:10px 0;border-top:1px solid #efefec}
+.ex div{flex:1;min-width:0}
+.ex b{display:block;font-weight:700;letter-spacing:-.02em;font-size:17px}
+.ex b em{font-style:normal;border-radius:4px;padding:0 2px}
+.ex small{color:var(--mute);font-size:14px}
+.c-pink em{background:var(--pink)}.c-violet em{background:#DCD8FF}.c-green em{background:#B8F2BB}
+.circles{position:relative;width:170px;height:170px}
+.circles i{position:absolute;border-radius:50%}
+.circles i:nth-child(1){width:112px;height:112px;background:var(--pink);left:4px;top:6px}
+.circles i:nth-child(2){width:74px;height:74px;background:var(--green);right:6px;bottom:8px;z-index:2}
+.cbx{display:grid;grid-template-columns:repeat(3,22px);gap:9px}
+.cbx i{width:22px;height:22px;border-radius:5px;background:#E3E1FF;display:grid;place-items:center;color:#fff}
+.cbx i.on{background:var(--violet)}
+.cbx i svg{width:15px;height:15px;opacity:0}.cbx i.on svg{opacity:1}
+.stack{display:grid;gap:6px;font-size:38px;justify-items:stretch;width:66%}
+.stack .pl{border-radius:999px;padding:.12em .5em}
+.stack .pl.box{border-radius:0}
+/* builder */
+.bld{display:grid;gap:16px;margin-top:26px}
+@media(min-width:900px){.bld{grid-template-columns:330px 1fr;align-items:start}}
+.dd{position:relative}
+.dd-lab{font-size:12px;font-weight:600;color:var(--mute);margin:0 0 6px}
+.dd-btn{display:flex;align-items:center;justify-content:space-between;width:100%;border:0;border-radius:10px;background:var(--violet);color:#fff;padding:12px 14px;font-weight:600;font-size:16px;cursor:pointer}
+.dd-btn .ic{transition:rotate .25s}
+.dd.open .dd-btn .ic{rotate:180deg}
+.dd-list{position:absolute;left:0;right:0;top:calc(100% + 6px);background:#fff;border-radius:12px;box-shadow:0 18px 40px -12px rgba(0,0,0,.35);padding:6px;z-index:10;display:none;max-height:300px;overflow:auto}
+.dd.open .dd-list{display:block}
+.dd-list button{display:flex;justify-content:space-between;width:100%;border:0;background:none;text-align:left;padding:10px 10px;border-radius:8px;font-size:15px;cursor:pointer}
+.dd-list button span{color:var(--mute)}
+.dd-list button:hover,.dd-list button.on{background:#EEEDFF}
+.dd-list button:disabled{opacity:.35;cursor:not-allowed}
+.ctrls{display:grid;gap:14px}
+.out{background:#fff;border-radius:var(--r);box-shadow:var(--sh);padding:26px 18px;min-height:300px;position:relative;overflow:hidden}
+.out .lab{font-size:13px;font-weight:600;color:var(--mute)}
+.word{font-size:clamp(40px,11vw,96px);font-weight:700;letter-spacing:-.06em;line-height:1;margin:14px 0 6px;display:flex;flex-wrap:wrap;align-items:baseline;gap:0}
+.word span{display:inline-block}
+.word .soft{color:var(--violet);text-decoration:underline;text-decoration-thickness:.06em;text-underline-offset:.08em}
+.word .lk{color:var(--yellow)}
+.word .sf{border-radius:.12em;padding:0 .04em}
+.word .sf.en{background:var(--pink)}.word .sf.dik{background:#DCD8FF}.word .sf.ecek{background:var(--green)}
+.word .ps{background:var(--yellow);border-radius:.12em;padding:0 .04em}
+.word .noun{margin-left:.25em;color:var(--mute)}
+.word .pre{margin-right:.25em;color:var(--mute)}
+.ru{font-size:clamp(17px,4.4vw,22px);font-weight:500;letter-spacing:-.02em;margin:0 0 18px}
+.rules{display:grid;gap:8px;background:#F4F4F2;border-radius:14px;padding:14px 16px;max-width:380px}
+.rules li{list-style:none;display:flex;align-items:center;gap:10px;font-size:15px;color:#a7a7a1;transition:color .3s}
+.rules li i{width:18px;height:18px;border-radius:5px;background:#dddcd6;display:grid;place-items:center;color:#fff;transition:background .3s;flex:none}
+.rules li i svg{width:12px;height:12px}
+.rules li.on{color:var(--ink);font-weight:600}.rules li.on i{background:var(--green);color:var(--ink)}
+.rules ul{margin:0;padding:0;display:grid;gap:8px}
+.out .say{position:absolute;right:16px;top:16px}
+/* delete prepositions */
+.del{display:grid;gap:16px;margin-top:26px}
+@media(min-width:900px){.del{grid-template-columns:1fr 300px;align-items:start}}
+.dlines{background:#fff;border-radius:var(--r);box-shadow:var(--sh);padding:8px 18px}
+.dl{display:flex;align-items:center;gap:10px;padding:15px 0;border-bottom:1px solid #efefec;min-height:64px}
+.dl:last-child{border:0}
+.dl .t{flex:1;font-size:clamp(19px,4.8vw,26px);font-weight:600;letter-spacing:-.03em;position:relative}
+.dl .t .tr{display:none}
+.dl.done .t .ruu{display:none}.dl.done .t .tr{display:inline}
+.prep{display:inline-block;background:var(--pink);border-radius:5px;padding:0 4px}
+.dl .t .tr em{font-style:normal;background:#DCD8FF;border-radius:4px;padding:0 3px}
+.menu{background:#fff;border-radius:14px;box-shadow:0 22px 50px -16px rgba(0,0,0,.4);padding:6px;position:relative}
+.menu button{display:flex;align-items:center;gap:12px;width:100%;border:0;background:none;padding:12px;border-radius:9px;font-size:17px;cursor:pointer;text-align:left}
+.menu button .ic{font-size:20px}
+.menu button.hl{background:var(--violet);color:#fff}
+.menu button:disabled{color:#bbb;cursor:default}
+.menu .ptr{position:absolute;width:34px;height:34px;right:16px;bottom:-6px;pointer-events:none;filter:drop-shadow(0 3px 4px rgba(0,0,0,.35))}
+.trash-n{margin-left:auto;font-size:13px;opacity:.8}
+/* trap */
+.trap{display:grid;gap:16px;margin-top:26px}
+@media(min-width:900px){.trap{grid-template-columns:1.1fr .9fr}}
+.rep{background:#fff;border-radius:var(--r);box-shadow:var(--sh);padding:22px}
+.rep .t1{font-size:15px;font-weight:500;margin:0}
+.rep .tw{font-size:clamp(32px,8.4vw,60px);font-weight:700;letter-spacing:-.055em;line-height:1;margin:10px 0 18px}
+.rep .tw span{border-radius:.12em;padding:0 .05em;transition:background .35s}
+.rep .tw.q1 .c{background:var(--green)}.rep .tw.q1 .b{background:var(--pink)}
+.rep .tw.q2 .a{background:var(--yellow)}
+.seg{display:inline-flex;background:#F1F1EE;border-radius:12px;padding:4px;gap:4px;margin-bottom:16px}
+.seg button{border:0;background:none;padding:8px 14px;border-radius:9px;font-weight:600;font-size:14px;cursor:pointer}
+.seg button.on{background:var(--ink);color:#fff}
+.bars{display:flex;gap:10px;height:150px;align-items:flex-end}
+.bars i{flex:1;border-radius:999px;background:#EFEFEC;height:100%;position:relative;overflow:hidden}
+.bars i::after{content:'';position:absolute;left:0;right:0;bottom:0;height:var(--h);background:var(--yellow);border-radius:999px;transition:height .7s cubic-bezier(.2,.9,.2,1)}
+.rep-note{font-size:16px;line-height:1.45;margin:14px 0 0}
+/* quiz */
+.quiz{display:grid;gap:16px;margin-top:26px}
+@media(min-width:900px){.quiz{grid-template-columns:1fr 340px;align-items:start}}
+.qcard{background:#fff;border-radius:var(--r);box-shadow:var(--sh);padding:22px 18px}
+.qn{font-size:13px;font-weight:600;color:var(--mute)}
+.qq{font-size:clamp(24px,6.2vw,38px);font-weight:700;letter-spacing:-.045em;line-height:1.05;margin:8px 0 18px}
+.opts{display:grid;gap:10px}
+.opt{display:flex;align-items:center;gap:12px;border:0;border-radius:14px;background:#F3F3F1;padding:15px 16px;font-size:18px;font-weight:600;letter-spacing:-.02em;text-align:left;cursor:pointer;transition:background .2s,scale .15s}
+.opt:hover{background:#E9E9E5}.opt:active{scale:.98}
+.opt .k{width:30px;height:30px;border-radius:50%;display:grid;place-items:center;background:#fff;font-size:13px;flex:none}
+.opt.ok{background:var(--green)}.opt.bad{background:var(--pink)}
+.opt:disabled{cursor:default}
+.qexp{margin:16px 0 0;font-size:16px;line-height:1.45;display:none}
+.qexp.on{display:block}
+.qnext{margin-top:16px;display:none}.qnext.on{display:inline-flex}
+.dots6{background:#fff;border-radius:var(--r);box-shadow:var(--sh);padding:22px;display:grid;grid-template-columns:repeat(3,1fr);gap:14px;justify-items:center}
+.dot{width:72px;height:72px;border-radius:50%;background:#F1F1EE;display:grid;place-items:center;transform:scale(.35)}
+.dot svg{width:44%;height:44%;opacity:0}
+.dot.ok{background:var(--green)}.dot.bad{background:var(--yellow)}
+.dot.ok svg,.dot.bad svg{opacity:1}
+.score{grid-column:1/-1;text-align:center;font-size:15px;margin:4px 0 0}
+.score b{display:block;font-size:44px;letter-spacing:-.06em;line-height:1}
+/* cheat */
+.cheat{display:grid;gap:16px;margin-top:22px}
+@media(min-width:900px){.cheat{grid-template-columns:repeat(3,1fr)}}
+.ch{background:#fff;border-radius:var(--r);box-shadow:var(--sh);padding:22px;display:flex;flex-direction:column;gap:10px}
+.ch .pl{font-size:46px;align-self:flex-start}
+.ch p{margin:0;font-size:16px}
+.ch .ex2{font-weight:700;letter-spacing:-.02em;font-size:18px}
+/* AD */
+.ad-bill .wall{aspect-ratio:auto;min-height:560px;padding:40px 0}
+@media(min-width:760px){.ad-bill .wall{min-height:600px}}
+.ad-sign{position:relative;margin:40px auto 0;width:min(90%,700px);background:#fff;padding:26px 22px 20px;box-shadow:0 30px 50px -22px rgba(0,0,0,.45),0 0 0 6px #f4f4f2,0 0 0 7px #cfcfca;z-index:2}
+.trl{display:block;width:100%;border:0;background:none;text-align:left;padding:12px 0;border-bottom:1px dashed #ddd;cursor:pointer}
+.trl:last-of-type{border:0}
+.trl .tk{display:block;font-size:clamp(22px,5.6vw,38px);font-weight:700;letter-spacing:-.045em;line-height:1.05}
+.trl .tk em{font-style:normal;border-radius:.12em;padding:0 .05em}
+.trl .tk em.en{background:var(--pink)}.trl .tk em.dik{background:#DCD8FF}.trl .tk em.ecek{background:var(--green)}
+.trl .rr{display:block;font-size:15px;color:var(--mute);margin-top:4px;max-height:0;overflow:hidden;transition:max-height .35s}
+.trl.on .rr{max-height:60px}
+.trl-hint{font-size:13px;color:var(--mute);margin:10px 0 0;display:flex;gap:6px;align-items:center}
+.chain{font-size:clamp(22px,5.4vw,34px);font-weight:600;letter-spacing:-.035em;line-height:1.22;max-width:24ch;margin:0}
+.chain span{display:block}
+.next{display:grid;gap:10px;margin-top:22px}
+.nx{display:flex;align-items:center;gap:14px;background:#fff;border-radius:16px;padding:14px 16px;box-shadow:var(--sh)}
+.nx .pl{font-size:18px;flex:none}
+.nx div{flex:1}.nx b{display:block;font-weight:600}.nx small{color:var(--mute)}
+.nx .lk{font-size:12px;font-weight:700;background:var(--bg);border-radius:999px;padding:5px 9px;display:inline-flex;gap:5px;align-items:center}
+/* monitor */
+.room{position:relative;border-radius:6px;overflow:hidden;padding:34px 12px 0;background:linear-gradient(160deg,#F4EFE8,#E8DFD3)}
+.room::before{content:'';position:absolute;inset:0;background:repeating-linear-gradient(105deg,rgba(80,50,20,.10) 0 26px,transparent 26px 64px);filter:blur(7px);pointer-events:none}
+.monitor{position:relative;width:min(100%,860px);margin:0 auto;z-index:2}
+.screen{background:#111;border-radius:14px;padding:8px;box-shadow:0 30px 60px -30px rgba(0,0,0,.6)}
+.bar{display:flex;gap:5px;align-items:center;padding:4px 6px 8px}
+.bar i{width:8px;height:8px;border-radius:50%;background:#444}
+.bar span{margin-left:8px;font-size:11px;color:#999;background:#222;border-radius:6px;padding:2px 10px}
+.screen video{width:100%;aspect-ratio:1000/475;object-fit:cover;border-radius:6px;background:#222}
+.stand{width:22%;height:46px;margin:0 auto;background:linear-gradient(#d9d9d6,#bdbdb8);clip-path:polygon(30% 0,70% 0,82% 100%,18% 100%)}
+.desk{height:30px;background:linear-gradient(#c9a27a,#b08660);margin:0 -12px}
+.plant{position:absolute;left:2%;bottom:30px;width:22%;max-width:170px;z-index:3}
+@media(max-width:600px){.plant{width:26%;left:-2%}}
+.vtabs{display:flex;gap:8px;flex-wrap:wrap;margin:16px 0 0}
+.vcap{font-size:15px;color:var(--mute);margin:10px 0 0;min-height:1.5em}
+/* terracotta phones */
+.table{position:relative;background:var(--terra);border-radius:6px;overflow:hidden;padding:38px 0 46px}
+.table::before{content:'';position:absolute;inset:-10%;background:repeating-linear-gradient(125deg,rgba(60,20,10,.22) 0 34px,transparent 34px 84px);filter:blur(9px);pointer-events:none}
+.phones{position:relative;display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding:6px 16px 10px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.phones::-webkit-scrollbar{display:none}
+.ph{flex:none;width:200px;scroll-snap-align:center;background:#0f0f0f;border-radius:30px;padding:7px;box-shadow:0 26px 40px -18px rgba(40,10,0,.6)}
+.ph img{border-radius:24px;width:100%;aspect-ratio:9/19.5;object-fit:cover;object-position:top;background:#eee}
+.ph figcaption{color:#fff;font-size:13px;font-weight:600;text-align:center;padding:8px 4px 2px}
+.succ{position:absolute;right:-30px;bottom:-40px;width:170px;z-index:1;pointer-events:none}
+.swipe{position:relative;color:#fff;font-size:13px;font-weight:600;text-align:center;margin-top:10px;opacity:.9}
+/* tiles marquee */
+.tiles{overflow:hidden;padding:8px 0;margin-top:24px}
+.ttrack{display:flex;gap:12px;width:max-content;animation:mq 40s linear infinite}
+html.gs .ttrack{animation:none}
+@keyframes mq{to{transform:translateX(-50%)}}
+.tile{width:150px;height:190px;flex:none;background:#fff;border-radius:6px;position:relative;overflow:hidden;display:grid;place-items:center;padding:12px;text-align:center;font-weight:700;letter-spacing:-.04em}
+.tile small{position:absolute;left:12px;top:10px;font-size:11px;font-weight:600;letter-spacing:0;text-align:left;line-height:1.2}
+.tile .big{font-size:44px;line-height:1}
+.tile.pk{background:var(--pink)}.tile.gr{background:var(--green)}.tile.yl{background:var(--yellow)}.tile.vi{background:var(--violet);color:#fff}.tile.bk{background:#000;color:#fff}
+/* six numbers */
+.six{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:26px}
+@media(min-width:900px){.six{grid-template-columns:repeat(3,1fr)}}
+.num{background:#fff;border-radius:var(--r);box-shadow:var(--sh);padding:18px;display:flex;flex-direction:column;gap:6px;min-height:190px;position:relative;overflow:hidden}
+.num .n{font-size:clamp(46px,12vw,72px);font-weight:700;letter-spacing:-.06em;line-height:.9;font-variant-numeric:tabular-nums}
+.num b{font-weight:700;font-size:16px;letter-spacing:-.02em;line-height:1.2}
+.num p{margin:0;font-size:14px;color:var(--mute);line-height:1.35}
+.num .em{position:absolute;right:14px;top:14px;width:30px;height:30px;border-radius:50%;display:grid;place-items:center;font-size:13px;font-weight:700}
+.num:nth-child(1) .em{background:var(--pink)}.num:nth-child(2) .em{background:var(--green)}.num:nth-child(3) .em{background:var(--yellow)}.num:nth-child(4) .em{background:var(--violet);color:#fff}.num:nth-child(5) .em{background:var(--pink)}.num:nth-child(6) .em{background:var(--green)}
+/* price */
+.price{display:grid;gap:16px;margin-top:26px}
+@media(min-width:900px){.price{grid-template-columns:1fr 1fr}}
+.pc{background:#fff;border-radius:var(--r);box-shadow:var(--sh);padding:24px 20px;position:relative;overflow:hidden}
+.pc .t1{font-size:15px;font-weight:500;margin:0}
+.pc .eur{font-size:clamp(76px,22vw,150px);font-weight:700;letter-spacing:-.07em;line-height:.85;margin:14px 0 10px}
+.pc .delta{display:inline-flex;gap:8px;align-items:center;font-size:13px}
+.pc .delta b{background:#D9F7DA;color:#0c7a14;border-radius:6px;padding:3px 8px}
+.pc .gbar{position:absolute;right:20px;top:24px;width:64px;height:150px;background:#EFEFEC;border-radius:4px;overflow:hidden}
+.pc .gbar i{position:absolute;left:0;right:0;bottom:0;height:86%;background:var(--green)}
+.months{display:flex;gap:6px;height:140px;align-items:flex-end;margin-top:16px}
+.months div{flex:1;display:flex;flex-direction:column;align-items:center;gap:6px;height:100%;justify-content:flex-end}
+.months i{width:100%;border-radius:999px;background:var(--yellow);height:30%;transform-origin:50% 100%}
+.months i.z{background:#EFEFEC;height:30%}
+.months span{font-size:10px;color:var(--mute)}
+.buy{display:grid;gap:10px;margin-top:22px}
+.buy .btn{width:100%;padding:19px 24px;font-size:18px}
+.fine{font-size:14px;color:var(--mute);text-align:center;margin:4px 0 0}
+/* reviews */
+.revs{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;padding:4px 16px 14px;margin:24px -16px 0;scrollbar-width:none}
+.revs::-webkit-scrollbar{display:none}
+.rvw{flex:none;width:min(84vw,360px);scroll-snap-align:start;background:#fff;border-radius:var(--r);padding:20px;box-shadow:var(--sh);display:flex;flex-direction:column;gap:12px}
+.rvw p{margin:0;font-size:16px;line-height:1.45}
+.rvw footer{display:flex;align-items:center;gap:10px;margin-top:auto;font-weight:600;font-size:14px}
+.rvw footer i{width:30px;height:30px;border-radius:50%;display:grid;place-items:center;font-style:normal;font-weight:700;font-size:13px}
+.rvw:nth-child(1) footer i{background:var(--pink)}.rvw:nth-child(2) footer i{background:var(--green)}.rvw:nth-child(3) footer i{background:var(--yellow)}.rvw:nth-child(4) footer i{background:var(--violet);color:#fff}
+.rvw footer span{color:var(--mute);font-weight:500}
+/* author */
+.auth{display:grid;gap:18px;margin-top:10px}
+@media(min-width:900px){.auth{grid-template-columns:1fr 1fr;align-items:center}}
+.facts{display:grid;gap:0}
+.fact{display:flex;justify-content:space-between;gap:12px;padding:13px 0;border-top:1px solid #242424;font-size:16px}
+.fact b{font-weight:600}
+/* faq */
+.faq{max-width:760px;margin-top:20px}
+.faq details{border-top:1px solid var(--line);padding:4px 0}
+.faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;gap:16px;align-items:center;padding:16px 0;font-size:19px;font-weight:600;letter-spacing:-.025em}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary .ic{transition:rotate .25s;flex:none}
+.faq details[open] summary .ic{rotate:180deg}
+.faq p{margin:0 0 16px;font-size:16px;max-width:60ch}
+/* final */
+.final{text-align:center}
+.final .sign-pills{font-size:clamp(40px,12vw,110px);margin-bottom:26px}
+.final .btn{padding:20px 30px;font-size:19px}
+.final .sub{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:12px}
+/* dock */
+.dock{position:fixed;left:10px;right:10px;bottom:calc(10px + env(safe-area-inset-bottom,0px));z-index:55;display:flex;gap:8px;align-items:center;background:var(--ink);color:#fff;border-radius:999px;padding:7px 7px 7px 18px;box-shadow:0 18px 40px -10px rgba(0,0,0,.5);transform:translateY(140%);transition:transform .45s cubic-bezier(.2,.9,.2,1);max-width:560px;margin:0 auto}
+.dock.on{transform:none}
+.dock .dt{flex:1;min-width:0;font-size:13px;line-height:1.2}
+.dock .dt b{display:block;font-size:15px;letter-spacing:-.02em}
+.dock .btn{padding:12px 18px;font-size:15px}
+.dock .wa{width:44px;height:44px;border-radius:50%;background:#1f1f1f;display:grid;place-items:center;flex:none;text-decoration:none}
+.dock .wa svg{width:22px;height:22px;color:var(--green)}
+footer.end{padding:40px 0 120px;font-size:14px;color:var(--mute)}
+footer.end .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.burst{position:fixed;inset:0;pointer-events:none;z-index:70}
+.burst i{position:absolute;border-radius:50%}
+@media(prefers-reduced-motion:reduce){.sway,.walker,.pacman,.ttrack{animation:none!important}html{scroll-behavior:auto}}
+</style>
+
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="i-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></symbol>
+<symbol id="i-plus" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="M12 5v14"/></symbol>
+<symbol id="i-volume-2" viewBox="0 0 24 24"><path d="M11 4.702a.705.705 0 0 0-1.203-.498L6.413 7.587A1.4 1.4 0 0 1 5.416 8H3a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h2.416a1.4 1.4 0 0 1 .997.413l3.383 3.384A.705.705 0 0 0 11 19.298z"/><path d="M16 9a5 5 0 0 1 0 6"/><path d="M19.364 18.364a9 9 0 0 0 0-12.728"/></symbol>
+<symbol id="i-book-open" viewBox="0 0 24 24"><path d="M12 7v14"/><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/></symbol>
+<symbol id="i-sparkles" viewBox="0 0 24 24"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"/><path d="M20 3v4"/><path d="M22 5h-4"/><path d="M4 17v2"/><path d="M5 18H3"/></symbol>
+<symbol id="i-graduation-cap" viewBox="0 0 24 24"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"/><path d="M22 10v6"/><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/></symbol>
+<symbol id="i-clapperboard" viewBox="0 0 24 24"><path d="M20.2 6 3 11l-.9-2.4c-.3-1.1.3-2.2 1.3-2.5l13.5-4c1.1-.3 2.2.3 2.5 1.3Z"/><path d="m6.2 5.3 3.1 3.9"/><path d="m12.4 3.4 3.1 4"/><path d="M3 11h18v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2Z"/></symbol>
+<symbol id="i-briefcase" viewBox="0 0 24 24"><path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/><rect width="20" height="14" x="2" y="6" rx="2"/></symbol>
+<symbol id="i-layers" viewBox="0 0 24 24"><path d="M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83z"/><path d="M2 12a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 12"/><path d="M2 17a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 17"/></symbol>
+<symbol id="i-circle-check" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></symbol>
+<symbol id="i-circle-x" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m15 9-6 6"/><path d="m9 9 6 6"/></symbol>
+<symbol id="i-route" viewBox="0 0 24 24"><circle cx="6" cy="19" r="3"/><path d="M9 19h8.5a3.5 3.5 0 0 0 0-7h-11a3.5 3.5 0 0 1 0-7H15"/><circle cx="18" cy="5" r="3"/></symbol>
+<symbol id="i-flag" viewBox="0 0 24 24"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" x2="4" y1="22" y2="15"/></symbol>
+<symbol id="i-trophy" viewBox="0 0 24 24"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></symbol>
+<symbol id="i-eye" viewBox="0 0 24 24"><path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0"/><circle cx="12" cy="12" r="3"/></symbol>
+<symbol id="i-zap" viewBox="0 0 24 24"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"/></symbol>
+<symbol id="i-laptop" viewBox="0 0 24 24"><path d="M20 16V7a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v9m16 0H4m16 0 1.28 2.55a1 1 0 0 1-.9 1.45H3.62a1 1 0 0 1-.9-1.45L4 16"/></symbol>
+<symbol id="i-message-circle" viewBox="0 0 24 24"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></symbol>
+<symbol id="i-repeat" viewBox="0 0 24 24"><path d="m17 2 4 4-4 4"/><path d="M3 11v-1a4 4 0 0 1 4-4h14"/><path d="m7 22-4-4 4-4"/><path d="M21 13v1a4 4 0 0 1-4 4H3"/></symbol>
+<symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+<symbol id="i-shuffle" viewBox="0 0 24 24"><path d="m18 14 4 4-4 4"/><path d="m18 2 4 4-4 4"/><path d="M2 18h1.973a4 4 0 0 0 3.3-1.7l5.454-8.6a4 4 0 0 1 3.3-1.7H22"/><path d="M2 6h1.972a4 4 0 0 1 3.6 2.2"/><path d="M22 18h-6.041a4 4 0 0 1-3.3-1.8l-.359-.45"/></symbol><symbol id="i-trash" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"/><path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"/><path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"/></symbol>
+<symbol id="i-chevron-down" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></symbol>
+<symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></symbol>
+<symbol id="i-wa" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.6.3-.2.2-.8.8-.8 2s.9 2.3 1 2.5c.1.2 1.7 2.6 4.1 3.6 1.5.7 2.1.7 2.9.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2l-.4-.2Z"/></symbol></svg>
+<div class="prog" id="prog"></div>
+<header class="top"><div class="wrap">
+  <a class="logo" href="#top" aria-label="Alterna"><svg viewBox="0 0 26 16"><rect x="0" y="1" width="26" height="4" rx="2"/><rect x="6" y="11" width="20" height="4" rx="2"/></svg>alterna</a>
+  
+</div></header>
+
+<main id="top">
+<!-- HERO -->
+<section class="hero"><div class="wrap">
+  <div class="wall" id="wall">
+    <svg class="leaves sway" viewBox="0 0 800 800" preserveAspectRatio="xMinYMin slice" aria-hidden="true"><g fill="#2b2a24"><path d="M-20 40 C120 60 220 120 300 240" stroke="#2b2a24" stroke-width="10" fill="none"/><ellipse cx="80" cy="70" rx="46" ry="18" transform="rotate(25 80 70)"/><ellipse cx="140" cy="120" rx="52" ry="20" transform="rotate(55 140 120)"/><ellipse cx="200" cy="150" rx="44" ry="17" transform="rotate(10 200 150)"/><ellipse cx="240" cy="210" rx="50" ry="19" transform="rotate(70 240 210)"/><ellipse cx="110" cy="40" rx="40" ry="15" transform="rotate(-20 110 40)"/><ellipse cx="290" cy="260" rx="42" ry="16" transform="rotate(35 290 260)"/><ellipse cx="60" cy="150" rx="40" ry="15" transform="rotate(80 60 150)"/><ellipse cx="180" cy="60" rx="38" ry="14" transform="rotate(-35 180 60)"/></g></svg>
+    <svg class="leaves b sway b" viewBox="0 0 800 800" preserveAspectRatio="xMaxYMin slice" aria-hidden="true"><g fill="#2b2a24"><path d="M820 20 C700 80 640 160 600 300 C580 380 560 470 540 560" stroke="#2b2a24" stroke-width="12" fill="none"/><ellipse cx="720" cy="90" rx="60" ry="22" transform="rotate(-30 720 90)"/><ellipse cx="660" cy="170" rx="56" ry="20" transform="rotate(-60 660 170)"/><ellipse cx="630" cy="260" rx="58" ry="22" transform="rotate(-15 630 260)"/><ellipse cx="590" cy="350" rx="52" ry="20" transform="rotate(-70 590 350)"/><ellipse cx="570" cy="450" rx="50" ry="19" transform="rotate(-25 570 450)"/><ellipse cx="760" cy="200" rx="50" ry="18" transform="rotate(20 760 200)"/></g></svg>
+    <svg class="walker" viewBox="0 0 60 160" aria-hidden="true"><g fill="#3a3a36"><circle cx="30" cy="14" r="11"/><path d="M18 30h24l4 52-8 2-2 40 6 34h-10l-6-34-4 34H12l6-34 0-42-8-2z"/></g></svg>
+    <div class="ground"></div>
+    <div class="sign" id="sign">
+      <div class="sign-pills" id="signPills"><span class="pl pink">gel</span><span class="pl box">en</span><span class="pl green">misafir</span></div>
+      <div class="sign-ru" id="signRu">гость, который приходит</div>
+      <div class="sign-foot"><span>≡ alterna</span><span>türkçe · B1</span></div>
+    </div>
+  </div>
+  <div class="hero-txt">
+    <p class="kick p">Турецкий · B1 · гайд на 7 минут</p>
+    <h1 class="mega split">Как сказать <span class="pl box">«который»</span> по-турецки</h1>
+    <p class="lead" style="margin-top:20px">Я искал в турецком слово «который». Полгода. Не нашёл. Его там нет. Есть три суффикса: <b>-en</b>, <b>-dik</b>, <b>-ecek</b>. Сейчас покажу.</p>
+    <div class="meta"><span class="tag">⏱ 7 минут</span><span class="tag">🔊 с озвучкой</span><span class="tag">🧩 конструктор</span><span class="tag">✓ тест</span></div>
+  </div>
+</div></section>
+
+<!-- STORY -->
+<section style="padding-top:20px"><div class="wrap">
+  <p class="kick">История</p>
+  <h2 class="h2 split">Hangi, hangi, hangi</h2>
+  <div class="thread">
+    <article class="post rv"><header><span class="ava">ТА</span><b>timur</b><span>Анталья</span></header>
+      <p>Я переехал в Анталью. В Анталье у меня был сосед. Сосед дал мне книгу. Книгу я потерял.</p><span class="n">1 / 5</span></article>
+    <article class="post rv"><header><span class="ava">ТА</span><b>timur</b></header>
+      <p>Через неделю сосед спрашивает, где книга. Я хочу сказать: книга, которую ты мне дал. Ищу в голове «который». Нахожу <span class="tr">hangi</span>.</p><span class="n">2 / 5</span></article>
+    <article class="post rv"><header><span class="ava">ТА</span><b>timur</b></header>
+      <p>Говорю, <span class="tr">kitap hangi verdin</span>. Сосед говорит, <span class="tr">hangi kitap?</span> Говорю, ну <span class="tr">hangi verdin</span>. Говорит, <span class="tr">hangi?</span> Говорю, <span class="loud">HANGİ</span>.</p><span class="n">3 / 5</span></article>
+    <article class="post rv"><header><span class="ava">ТА</span><b>timur</b></header>
+      <p>Мы стояли в коридоре. Два взрослых человека. И кричали друг другу «какой». Минуты три.</p><span class="n">4 / 5</span></article>
+    <article class="post rv"><header><span class="ava">ТА</span><b>timur</b></header>
+      <p>Потом сосед понял. Говорит, а, <span class="tr">verdiğim kitap</span>. Книга, которую я дал. Одно слово. Без «который». Говорю, да. Она. Говорит, и где она. Говорю, <span class="tr">kaybettim</span>.</p>
+      <p>Книгу я, кстати, так и не нашёл. Зато нашёл <span class="pl box stamp">-dik</span></p><span class="n">5 / 5</span></article>
+  </div>
+  <p class="txt mute" style="margin-top:18px"><b style="color:var(--ink)">hangi</b> — это вопрос «какой?». Не «который». Запомните. Чтобы не кричать в коридоре.</p>
+</div></section>
+
+<!-- MANIFESTO -->
+<section><div class="wrap">
+  <p class="mani" id="mani">Слова <span class="st">«который»<span class="stk cb"><svg><use href="#i-check"/></svg></span></span> нет. <span class="st">Есть суффикс.<span class="stk add">+ Add</span></span> И <span class="st">порядок.<span class="stk pac"><span class="pacman"><b>-dik</b></span></span><span class="stk abcs"><span class="abc"><i>en</i><i>dik</i><i>cek</i></span></span></span></p>
+</div></section>
+
+<!-- ORDER -->
+<section style="padding-top:30px"><div class="wrap">
+  <p class="kick y">Порядок слов</p>
+  <h2 class="h2 split">Сначала подробности. Потом — кто.</h2>
+  <p class="lead">Русский называет человека и потом рассказывает, что он сделал. Турецкий сначала рассказывает. Человек приходит в самом конце. Как гость, который опоздал.</p>
+  <div class="order">
+    <div class="ord-tabs" id="ordTabs"></div>
+    <div class="stage">
+      <div class="lang" id="ordLang"><b>RU</b> → русский порядок</div>
+      <div class="row" id="ordRow"></div>
+      <div class="ord-ctl">
+        <button class="btn" id="ordGo"><svg class="ic"><use href="#i-shuffle"/></svg><span>Перевести на турецкий</span></button>
+        <button class="say" id="ordSay" aria-label="Озвучить"><svg class="ic"><use href="#i-volume-2"/></svg></button>
+        <span class="arrow-note" id="ordNote">Цвет = та же часть фразы</span>
+      </div>
+    </div>
+  </div>
+</div></section>
+
+<!-- QUESTION (dark) -->
+<section class="dark"><div class="wrap">
+  <p class="kick v" style="color:#fff">Главный вопрос</p>
+  <h2 class="mega split" style="margin-bottom:10px">Кто делает?</h2>
+  <p class="lead mute">Одного вопроса хватает. Задаёте его существительному. Оно отвечает. Обычно молча.</p>
+  <div class="qrules">
+    <div class="qrule rv"><span class="pl pink">-en</span><div>Существительное делает само.<small>гость приходит · поезд уходит · девушка читает</small></div></div>
+    <div class="qrule rv"><span class="pl box">-dik</span><div>Делает кто-то другой. Сейчас или раньше.<small>книга не читает. Читаю я → okuduğ<b style="color:#fff">um</b></small></div></div>
+    <div class="qrule rv"><span class="pl green">-ecek</span><div>Делает кто-то другой. Потом.<small>город не поедет. Поеду я → gideceğ<b style="color:#fff">im</b></small></div></div>
+  </div>
+  <div class="sheet rv" id="sheet">
+    <div class="sheet-h"><span class="pl pink">kim</span><span class="pl box">yapıyor</span><span class="pl green">?</span><span>+ Add column</span></div>
+    <table>
+      <thead><tr><th></th><th>Фраза</th><th class="hide-s">Кто делает</th><th>Суффикс</th><th>По-турецки</th></tr></thead>
+      <tbody id="sheetBody"></tbody>
+    </table>
+    <svg class="cursor" id="cursor" viewBox="0 0 24 24"><path d="M3 2l17 9-7.5 1.5L9 20z" fill="#111" stroke="#fff" stroke-width="1.5"/></svg>
+  </div>
+</div></section>
+
+<!-- THREE CARDS -->
+<section><div class="wrap">
+  <p class="kick p">Три суффикса</p>
+  <h2 class="h2 split">Три характера. Как у соседей.</h2>
+  <div class="three">
+    <article class="sx rv">
+      <div class="sx-h"><svg class="ic" viewBox="0 0 26 16" style="width:22px"><rect x="0" y="1" width="26" height="4" rx="2"/><rect x="6" y="11" width="20" height="4" rx="2"/></svg>-(y)en<span class="dots">•••</span></div>
+      <div class="sx-v"><div class="circles" id="circ"><i></i><i></i></div></div>
+      <div class="sx-b c-pink">
+        <p class="big">-en</p>
+        <p class="f">Делает сам. Лица не нужны. Он и есть лицо.<br><code>глагол + an/en</code>, после гласной <code>y</code>.</p>
+        <div class="ex"><div><b>gel<em>en</em> misafir</b><small>гость, который приходит</small></div><button class="say" data-say="gelen misafir" aria-label="Озвучить"><svg class="ic"><use href="#i-volume-2"/></svg></button></div>
+        <div class="ex"><div><b>kitap oku<em>yan</em> kız</b><small>девушка, которая читает книгу</small></div><button class="say" data-say="kitap okuyan kız" aria-label="Озвучить"><svg class="ic"><use href="#i-volume-2"/></svg></button></div>
+        <div class="ex"><div><b>Türkçe bil<em>en</em> arkadaş</b><small>друг, который знает турецкий</small></div><button class="say" data-say="Türkçe bilen arkadaş" aria-label="Озвучить"><svg class="ic"><use href="#i-volume-2"/></svg></button></div>
+        <div class="ex"><div><b>uyu<em>yan</em> bebek</b><small>ребёнок, который спит</small></div><button class="say" data-say="uyuyan bebek" aria-label="Озвучить"><svg class="ic"><use href="#i-volume-2"/></svg></button></div>
+        <div class="ex"><div><b>gelme<em>yen</em> öğrenci</b><small>студент, который не пришёл</small></div><button class="say" data-say="gelmeyen öğrenci" aria-label="Озвучить"><svg class="ic"><use href="#i-volume-2"/></svg></button></div>
+      </div>
+    </article>
+    <article class="sx rv">
+      <div class="sx-h"><svg class="ic" viewBox="0 0 26 16" style="width:22px"><rect x="0" y="1" width="26" height="4" rx="2"/><rect x="6" y="11" width="20" height="4" rx="2"/></svg>-dik + чей<span class="dots">•••</span></div>
+      <div class="sx-v"><div class="cbx" id="cbx"></div></div>
+      <div class="sx-b c-violet">
+        <p class="big">-dik</p>
+        <p class="f">Делает кто-то другой. Этот другой сидит в окончании: <code>-um, -un, -u</code>.<br><code>dık/dik/duk/dük</code>, после глухих <code>t</code>. Перед гласной <code>k → ğ</code>.</p>
+        <div class="ex"><div><b>oku<em>duğum</em> kitap</b><small>книга, которую я читаю / прочитал</small></div><button class="say" data-say="okuduğum kitap" aria-label="Озвучить"><svg class="ic"><use href="#i-volume-2"/></svg></button></div>
+        <div class="ex"><div><b>yaşa<em>dığın</em> şehir</b><small>город, в котором ты живёшь</small></div><button class="say" data-say="yaşadığın şehir" aria-label="Озвучить"><svg class="ic"><use href="#i-volume-2"/></svg></button></div>
+        <div class="ex"><div><b>Ali'nin al<em>dığı</em> araba</b><small>машина, которую купил Али</small></div><button class="say" data-say="Ali'nin aldığı araba" aria-label="Озвучить"><svg class="ic"><use href="#i-volume-2"/></svg></button></div>
+        <div class="ex"><div><b>konuş<em>tuğumuz</em> adam</b><small>человек, с которым мы говорили</small></div><button class="say" data-say="konuştuğumuz adam" aria-label="Озвучить"><svg class="ic"><use href="#i-volume-2"/></svg></button></div>
+        <div class="ex"><div><b>görme<em>diğim</em> film</b><small>фильм, который я не видел</small></div><button class="say" data-say="görmediğim film" aria-label="Озвучить"><svg class="ic"><use href="#i-volume-2"/></svg></button></div>
+      </div>
+    </article>
+    <article class="sx rv">
+      <div class="sx-h"><svg class="ic" viewBox="0 0 26 16" style="width:22px"><rect x="0" y="1" width="26" height="4" rx="2"/><rect x="6" y="11" width="20" height="4" rx="2"/></svg>-ecek + чей<span class="dots">•••</span></div>
+      <div class="sx-v"><div class="stack" id="stk"><span class="pl box">oku</span><span class="pl violet">yacağ</span><span class="pl pink">ım</span></div></div>
+      <div class="sx-b c-green">
+        <p class="big">-ecek</p>
+        <p class="f">То же самое, только завтра. Или никогда. Как обычно.<br><code>(y)acak/(y)ecek + чей</code>. Перед гласной <code>k → ğ</code>.</p>
+        <div class="ex"><div><b>oku<em>yacağım</em> kitap</b><small>книга, которую я прочитаю</small></div><button class="say" data-say="okuyacağım kitap" aria-label="Озвучить"><svg class="ic"><use href="#i-volume-2"/></svg></button></div>
+        <div class="ex"><div><b>gid<em>eceğimiz</em> şehir</b><small>город, в который мы поедем</small></div><button class="say" data-say="gideceğimiz şehir" aria-label="Озвучить"><svg class="ic"><use href="#i-volume-2"/></svg></button></div>
+        <div class="ex"><div><b>yap<em>acağın</em> iş</b><small>работа, которую ты сделаешь</small></div><button class="say" data-say="yapacağın iş" aria-label="Озвучить"><svg class="ic"><use href="#i-volume-2"/></svg></button></div>
+        <div class="ex"><div><b>yarın gel<em>ecek</em> misafir</b><small>гость, который придёт завтра. Без «чей»: гость приходит сам</small></div><button class="say" data-say="yarın gelecek misafir" aria-label="Озвучить"><svg class="ic"><use href="#i-volume-2"/></svg></button></div>
+      </div>
+    </article>
+  </div>
+</div></section>
+
+<!-- BUILDER -->
+<section style="padding-top:30px"><div class="wrap">
+  <p class="kick v">Конструктор</p>
+  <h2 class="h2 split">Соберите сами</h2>
+  <p class="lead">Выберите глагол, суффикс и кто делает. Турецкий сам поставит <b>y</b>, сам поменяет <b>k</b> на <b>ğ</b>. Вам останется удивиться.</p>
+  <div class="bld">
+    <div class="ctrls">
+      <div class="dd" data-k="verb"><p class="dd-lab">Глагол</p><button class="dd-btn"><span></span><svg class="ic"><use href="#i-chevron-down"/></svg></button><div class="dd-list"></div></div>
+      <div class="dd" data-k="suf"><p class="dd-lab">Суффикс</p><button class="dd-btn"><span></span><svg class="ic"><use href="#i-chevron-down"/></svg></button><div class="dd-list"></div></div>
+      <div class="dd" data-k="per"><p class="dd-lab">Кто делает</p><button class="dd-btn"><span></span><svg class="ic"><use href="#i-chevron-down"/></svg></button><div class="dd-list"></div></div>
+      <button class="btn line" id="bldRnd" style="color:var(--ink)"><svg class="ic"><use href="#i-shuffle"/></svg>Случайно</button>
+    </div>
+    <div class="out">
+      <p class="lab">Результат</p>
+      <button class="say" id="bldSay" aria-label="Озвучить"><svg class="ic"><use href="#i-volume-2"/></svg></button>
+      <div class="word" id="bldWord"></div>
+      <p class="ru" id="bldRu"></p>
+      <div class="rules"><ul id="bldRules"></ul></div>
+    </div>
+  </div>
+</div></section>
+
+<!-- DELETE PREPOSITIONS -->
+<section style="padding-top:30px"><div class="wrap">
+  <p class="kick p">Куда делись предлоги</p>
+  <h2 class="h2 split">В котором. С которым. О котором.</h2>
+  <p class="lead">В русском у «который» есть предлоги. Турецкий нажал Delete. Остался <b>-dik</b>. Он всё помнит. Просто не говорит.</p>
+  <div class="del">
+    <div class="dlines" id="dlines">
+      <div class="dl"><div class="t"><span class="ruu">город, <i class="prep">в</i> котором я живу</span><span class="tr">yaşa<em>dığım</em> şehir</span></div><button class="say" data-say="yaşadığım şehir" aria-label="Озвучить"><svg class="ic"><use href="#i-volume-2"/></svg></button></div>
+      <div class="dl"><div class="t"><span class="ruu">человек, <i class="prep">с</i> которым я говорил</span><span class="tr">konuş<em>tuğum</em> adam</span></div><button class="say" data-say="konuştuğum adam" aria-label="Озвучить"><svg class="ic"><use href="#i-volume-2"/></svg></button></div>
+      <div class="dl"><div class="t"><span class="ruu">фильм, <i class="prep">о</i> котором ты рассказывал</span><span class="tr">bahset<em>tiğin</em> film</span></div><button class="say" data-say="bahsettiğin film" aria-label="Озвучить"><svg class="ic"><use href="#i-volume-2"/></svg></button></div>
+      <div class="dl"><div class="t"><span class="ruu">день, <i class="prep">когда</i> я родился</span><span class="tr">doğ<em>duğum</em> gün</span></div><button class="say" data-say="doğduğum gün" aria-label="Озвучить"><svg class="ic"><use href="#i-volume-2"/></svg></button></div>
+    </div>
+    <div class="menu" id="menu">
+      <button disabled><svg class="ic"><use href="#i-layers"/></svg>Duplicate</button>
+      <button disabled><svg class="ic"><use href="#i-repeat"/></svg>Actual vs Plan</button>
+      <button class="hl" id="delBtn"><svg class="ic"><use href="#i-trash"/></svg><span>Delete предлоги</span><span class="trash-n" id="trashN">4</span></button>
+      <svg class="ptr" viewBox="0 0 24 24"><path d="M3 2l17 9-7.5 1.5L9 20z" fill="#111" stroke="#fff" stroke-width="1.5"/></svg>
+    </div>
+  </div>
+</div></section>
+
+<!-- TRAP -->
+<section style="padding-top:30px"><div class="wrap">
+  <p class="kick y">Ловушка B1</p>
+  <h2 class="h2 split">«У которого»</h2>
+  <p class="lead">У соседа была машина. Машина сломалась. Как сказать: человек, у которого сломалась машина? Тут все тянутся к <b>-dik</b>. Зря.</p>
+  <div class="trap">
+    <div class="rep rv">
+      <p class="t1">Нажмите вопросы по очереди</p>
+      <div class="seg" id="trapSeg"><button class="on" data-q="q1">Кто сломался?</button><button data-q="q2">Чья машина?</button></div>
+      <div class="tw q1" id="trapW"><span class="c">araba</span><span class="a">sı</span> <span>bozul</span><span class="b">an</span> <span>adam</span></div>
+      <p class="rep-note" id="trapNote">Сломалась машина. Не человек. Машина делает сама — значит, <b>-an</b>.</p>
+      <button class="say" data-say="arabası bozulan adam" aria-label="Озвучить" style="margin-top:12px"><svg class="ic"><use href="#i-volume-2"/></svg></button>
+    </div>
+    <div class="rep rv">
+      <p class="t1">Ещё два, по той же схеме</p>
+      <div class="ex"><div><b>baba<em style="background:var(--yellow)">sı</em> doktor ol<em style="background:var(--pink)">an</em> çocuk</b><small>ребёнок, у которого отец врач</small></div><button class="say" data-say="babası doktor olan çocuk" aria-label="Озвучить"><svg class="ic"><use href="#i-volume-2"/></svg></button></div>
+      <div class="ex"><div><b>kedi<em style="background:var(--yellow)">si</em> kaybol<em style="background:var(--pink)">an</em> kız</b><small>девушка, у которой потерялась кошка</small></div><button class="say" data-say="kedisi kaybolan kız" aria-label="Озвучить"><svg class="ic"><use href="#i-volume-2"/></svg></button></div>
+      <p class="rep-note">Правило то же. Кто делает? Отец, кошка. Они и делают. «Чей» вешаем на них самих.</p>
+    </div>
+  </div>
+</div></section>
+
+<!-- QUIZ -->
+<section style="padding-top:30px"><div class="wrap">
+  <p class="kick">Тест</p>
+  <h2 class="h2 split">Шесть вопросов</h2>
+  <p class="lead">Сосед проверял меня так же. Только громче.</p>
+  <div class="quiz">
+    <div class="qcard" id="qcard">
+      <p class="qn" id="qn"></p>
+      <p class="qq" id="qq"></p>
+      <div class="opts" id="opts"></div>
+      <p class="qexp" id="qexp"></p>
+      <button class="btn qnext" id="qnext">Дальше <svg class="ic"><use href="#i-arrow-right"/></svg></button>
+    </div>
+    <div class="dots6" id="dots6"></div>
+  </div>
+</div></section>
+
+<!-- CHEAT -->
+<section style="padding-top:30px"><div class="wrap">
+  <p class="kick p">Шпаргалка</p>
+  <h2 class="h2 split">Сделайте скриншот. Я серьёзно.</h2>
+  <div class="cheat">
+    <div class="ch rv"><span class="pl pink">-en</span><p><b>Делает само.</b> Без лиц.</p><p class="ex2">gelen misafir</p><p class="mute">a/e · после гласной y · gidEN (git → gid)</p></div>
+    <div class="ch rv"><span class="pl box">-dik</span><p><b>Делает другой. Сейчас или было.</b> + чей.</p><p class="ex2">okuduğum kitap</p><p class="mute">ı/i/u/ü · d → t после глухих · k → ğ</p></div>
+    <div class="ch rv"><span class="pl green">-ecek</span><p><b>Делает другой. Потом.</b> + чей.</p><p class="ex2">gideceğim şehir</p><p class="mute">a/e · y после гласной · k → ğ</p></div>
+  </div>
+  <p class="txt mute" style="margin-top:18px">Порядок: всё про действие — до существительного. Предлоги русского «в котором, с которым» — внутри -dik. «У которого» — снова -en + чей на подлежащем.</p>
+</div></section>
+
+
+
+<section class="final"><div class="wrap">
+  <div class="sign-pills"><span class="pl pink">Get</span><span class="pl box">türkçe</span><span class="pl green">done</span></div>
+  <p class="lead" style="margin:0 auto;text-align:center">Конец урока. Следующая тема — <b>-dığında</b>, «когда». Вы уже знаете половину.</p>
+</div></section>
+
+</main>
+<footer class="end"><div class="wrap"><span>≡ alterna · türkçe</span><span>Тимур Ахметов · гайд «Который по-турецки»</span></div></footer>
+
+
+<script>
+function xInit(){
+var $=function(s,r){return (r||document).querySelector(s)},$$=function(s,r){return Array.prototype.slice.call((r||document).querySelectorAll(s))};
+var RM=matchMedia('(prefers-reduced-motion: reduce)').matches;
+var G=(window.gsap&&window.ScrollTrigger&&!RM)?gsap:null;
+if(G){gsap.registerPlugin(ScrollTrigger);if(window.SplitText)gsap.registerPlugin(SplitText);document.documentElement.classList.add('gs');ScrollTrigger.config({ignoreMobileResize:true});}
+function whenVisible(el,on,off){if(!el)return;new IntersectionObserver(function(e){e.forEach(function(x){x.isIntersecting?on():off&&off()})},{rootMargin:'100px'}).observe(el)}
+
+/* speech */
+var trVoice=null;
+function pickVoice(){var v=speechSynthesis.getVoices();trVoice=v.filter(function(x){return /^tr/i.test(x.lang)})[0]||null}
+if('speechSynthesis' in window){pickVoice();speechSynthesis.onvoiceschanged=pickVoice}
+function speak(t,btn){if(!('speechSynthesis' in window))return;speechSynthesis.cancel();var u=new SpeechSynthesisUtterance(t);u.lang='tr-TR';u.rate=.88;if(trVoice)u.voice=trVoice;if(btn){btn.classList.add('on');u.onend=u.onerror=function(){btn.classList.remove('on')}}speechSynthesis.speak(u)}
+document.addEventListener('click',function(e){var b=e.target.closest('[data-say]');if(b)speak(b.getAttribute('data-say'),b)});
+
+/* progress */
+var prog=$('#prog');
+function onScroll(){var h=document.documentElement;var p=h.scrollTop/(h.scrollHeight-h.clientHeight);prog.style.transform='scaleX('+p+')'}
+addEventListener('scroll',onScroll,{passive:true});
+
+/* reveal fallback */
+var io=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}})},{rootMargin:'0px 0px -8% 0px'});
+$$('.rv').forEach(function(el){io.observe(el)});
+
+/* headings */
+if(G&&window.SplitText){
+  $$('.split').forEach(function(h){
+    if(h.classList.contains('split-lines'))return;
+    var s=new SplitText(h,{type:'words',wordsClass:'wd'});
+    gsap.from(s.words,{yPercent:60,rotation:4,duration:.8,ease:'back.out(2)',stagger:.05,scrollTrigger:{trigger:h,start:'top 88%'}});
+    $$('.pl',h).forEach(function(p){gsap.from(p,{rotation:-8,scale:.6,duration:1,ease:'elastic.out(1,.45)',scrollTrigger:{trigger:h,start:'top 88%'},delay:.25})});
+  });
+  ScrollTrigger.batch('.rv',{start:'top 92%',onEnter:function(b){gsap.fromTo(b,{y:30},{y:0,duration:.8,ease:'power3.out',stagger:.08})}});
+  $$('#chain span').forEach(function(s,i){gsap.from(s,{x:-30,duration:.7,ease:'power3.out',scrollTrigger:{trigger:s,start:'top 90%'}})});
+}
+
+/* hero sign cycle */
+var SIGN=[
+ [['gel','pink'],['en','box'],['misafir','green'],'гость, который приходит','gelen misafir'],
+ [['oku','pink'],['duğum','box'],['kitap','green'],'книга, которую я читаю','okuduğum kitap'],
+ [['gid','pink'],['eceğim','box'],['şehir','green'],'город, в который я поеду','gideceğim şehir'],
+ [['ver','pink'],['diğin','box'],['kitap','green'],'книга, которую ты дал','verdiğin kitap']
+];
+var si=0,sp=$('#signPills'),sr=$('#signRu'),sTimer=null;
+function signSet(i){var d=SIGN[i];sp.innerHTML=d.slice(0,3).map(function(p){return '<span class="pl '+p[1]+'">'+p[0]+'</span>'}).join('');sr.textContent=d[3];
+  if(G){gsap.from(sp.children,{rotationX:-90,y:10,duration:.7,ease:'back.out(2.2)',stagger:.09});gsap.from(sr,{y:8,duration:.5,ease:'power2.out'})}}
+function signLoop(){if(sTimer)return;sTimer=setInterval(function(){si=(si+1)%SIGN.length;signSet(si)},3200)}
+if(!RM)whenVisible($('#wall'),signLoop,function(){clearInterval(sTimer);sTimer=null});
+$('#sign').addEventListener('click',function(){speak(SIGN[si][4])});
+$('#sign').style.cursor='pointer';
+/* hero intro */
+if(G){gsap.from('#sign',{y:40,rotation:-2,duration:1.1,ease:'power3.out'});
+}
+
+/* manifesto stickers */
+if(G){gsap.from('#mani .stk',{scale:.3,rotation:-25,duration:1,ease:'elastic.out(1,.45)',stagger:.15,scrollTrigger:{trigger:'#mani',start:'top 80%'}});
+  gsap.to('#mani .stk.add',{y:-6,repeat:-1,yoyo:true,duration:1.4,ease:'sine.inOut'});}
+
+/* order demo */
+var ORD=[
+ {t:'kitap okuyan kız',p:[['pink','девушка','kız'],['green','которая читает','okuyan'],['box','книгу','kitap']],ru:[0,1,2],tr:[2,1,0]},
+ {t:'okuduğum kitap',p:[['pink','книга,','kitap'],['green','которую я читаю','okuduğum']],ru:[0,1],tr:[1,0]},
+ {t:'yaşadığım şehir',p:[['pink','город,','şehir'],['green','в котором я живу','yaşadığım']],ru:[0,1],tr:[1,0]},
+ {t:'yarın gelecek misafirler',p:[['pink','гости,','misafirler'],['green','которые придут','gelecek'],['box','завтра','yarın']],ru:[0,1,2],tr:[2,1,0]}
+];
+var oi=0,otr=false,orow=$('#ordRow');
+$('#ordTabs').innerHTML=ORD.map(function(o,i){return '<button class="chip'+(i?'':' on')+'" data-i="'+i+'">'+o.p.map(function(x){return x[1]}).join(' ').replace(',','')+'</button>'}).join('');
+function ordRender(){var o=ORD[oi],ord=otr?o.tr:o.ru;orow.innerHTML='';ord.forEach(function(k){var x=o.p[k];var s=document.createElement('span');s.className='pl '+x[0];s.dataset.k=k;s.textContent=otr?x[2]:x[1];orow.appendChild(s)});
+  $('#ordLang').innerHTML=otr?'<b>TR</b> → турецкий порядок':'<b>RU</b> → русский порядок';$('#ordGo span').textContent=otr?'Обратно на русский':'Перевести на турецкий';$('#ordSay').style.visibility=otr?'visible':'hidden'}
+function ordFlip(){var o=ORD[oi];var before={};$$('.pl',orow).forEach(function(s){before[s.dataset.k]=s.getBoundingClientRect()});otr=!otr;
+  var ord=otr?o.tr:o.ru;ord.forEach(function(k){var s=orow.querySelector('[data-k="'+k+'"]');s.textContent=otr?o.p[k][2]:o.p[k][1];orow.appendChild(s)});
+  $('#ordLang').innerHTML=otr?'<b>TR</b> → турецкий порядок':'<b>RU</b> → русский порядок';$('#ordGo span').textContent=otr?'Обратно на русский':'Перевести на турецкий';$('#ordSay').style.visibility=otr?'visible':'hidden';
+  if(G){$$('.pl',orow).forEach(function(s,i){var b=before[s.dataset.k],a=s.getBoundingClientRect();gsap.fromTo(s,{x:b.left-a.left,y:b.top-a.top,rotation:(i%2?-7:7)},{x:0,y:0,rotation:0,duration:.9,ease:'back.out(1.6)',delay:i*.06})})}
+  if(otr)speak(o.t)}
+$('#ordTabs').addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;oi=+b.dataset.i;otr=false;$$('#ordTabs .chip').forEach(function(c){c.classList.toggle('on',c===b)});ordRender()});
+$('#ordGo').addEventListener('click',ordFlip);
+$('#ordSay').addEventListener('click',function(){speak(ORD[oi].t,this)});
+ordRender();
+var ordAuto=false;whenVisible($('.stage'),function(){if(ordAuto||RM)return;ordAuto=true;setTimeout(function(){if(!otr)ordFlip()},900)});
+
+/* sheet */
+var SH=[
+ ['гость, который пришёл','гость сам','-en','pink','gelen misafir'],
+ ['книга, которую я читаю','я, не книга','-dik','box','okuduğum kitap'],
+ ['письмо, которое я напишу','я, потом','-ecek','green','yazacağım mektup'],
+ ['поезд, который уходит','поезд сам','-en','pink','giden tren'],
+ ['город, в котором ты живёшь','ты','-dik','box','yaşadığın şehir'],
+ ['фильм, который мы посмотрим','мы, потом','-ecek','green','izleyeceğimiz film']
+];
+$('#sheetBody').innerHTML=SH.map(function(r,i){return '<tr><td>'+(i+1)+'</td><td>'+r[0]+'</td><td class="who hide-s">'+r[1]+'</td><td><span class="pl '+r[3]+'">'+r[2]+'</span></td><td class="tr">'+r[4]+' <button class="say" data-say="'+r[4]+'" aria-label="Озвучить" style="width:28px;height:28px;vertical-align:middle"><svg class="ic"><use href="#i-volume-2"/></svg></button></td></tr>'}).join('');
+if(G){var rows=$$('#sheetBody tr'),cur=$('#cursor'),sheet=$('#sheet');
+  var tl=gsap.timeline({scrollTrigger:{trigger:sheet,start:'top 70%'}});
+  gsap.set($$('#sheetBody .pl'),{scale:.4,rotation:-12});
+  rows.forEach(function(r){var p=r.querySelector('.pl');tl.to(cur,{duration:.45,ease:'power2.inOut',x:function(){var a=p.getBoundingClientRect(),b=sheet.getBoundingClientRect();return a.left-b.left+a.width*.6},y:function(){var a=p.getBoundingClientRect(),b=sheet.getBoundingClientRect();return a.top-b.top+a.height*.5}})
+    .add(function(){rows.forEach(function(x){x.classList.toggle('hot',x===r)})})
+    .to(p,{scale:1,rotation:0,duration:.6,ease:'elastic.out(1,.45)'},'<.05')});
+  tl.add(function(){rows.forEach(function(x){x.classList.remove('hot')})}).to(cur,{opacity:0,duration:.3});
+} else {$('#cursor').style.display='none'}
+
+/* card visuals */
+var cbx=$('#cbx');for(var i=0;i<9;i++)cbx.insertAdjacentHTML('beforeend','<i><svg><use href="#i-check"/></svg></i>');
+if(G){
+  var ct=gsap.timeline({repeat:-1,yoyo:true,paused:true});ct.to('#circ i:nth-child(1)',{x:14,y:10,scale:.9,duration:1.4,ease:'sine.inOut'}).to('#circ i:nth-child(2)',{x:-20,y:-16,scale:1.15,duration:1.4,ease:'sine.inOut'},0);
+  whenVisible($('#circ'),function(){ct.play()},function(){ct.pause()});
+  var boxes=$$('#cbx i'),bi=0,bT=null;
+  whenVisible(cbx,function(){if(bT)return;bT=setInterval(function(){var b=boxes[[4,1,7,3,5,0,8,2,6][bi%9]];b.classList.toggle('on');gsap.fromTo(b,{scale:.6},{scale:1,duration:.5,ease:'back.out(3)'});bi++},380)},function(){clearInterval(bT);bT=null});
+  var st=gsap.timeline({repeat:-1,repeatDelay:1,paused:true});st.from('#stk .pl',{x:function(i){return i%2?80:-80},rotation:function(i){return i%2?10:-10},duration:.7,ease:'back.out(2)',stagger:.15}).to('#stk .pl',{x:function(i){return i%2?80:-80},duration:.5,ease:'power2.in',stagger:.1,delay:1.6});
+  whenVisible($('#stk'),function(){st.play()},function(){st.pause()});
+}
+
+/* builder */
+var VB={
+ oku:{tr:'oku',ru:'читать',pres:['читаю','читаешь','читает','читаем','читаете','читают'],fut:['прочитаю','прочитаешь','прочитает','прочитаем','прочитаете','прочитают'],obj:['kitap','книга','которую'],sub:['kitap','öğrenci','студент, который читает книгу']},
+ al:{tr:'al',ru:'покупать',pres:['покупаю','покупаешь','покупает','покупаем','покупаете','покупают'],fut:['куплю','купишь','купит','купим','купите','купят'],obj:['araba','машина','которую'],sub:['araba','müşteri','покупатель, который покупает машину']},
+ git:{tr:'git',soft:'gid',ru:'ехать',pres:['еду','едешь','едет','едем','едете','едут'],fut:['поеду','поедешь','поедет','поедем','поедете','поедут'],obj:['şehir','город','в который'],sub:["İstanbul'a",'tren','поезд, который идёт в Стамбул']},
+ iç:{tr:'iç',ru:'пить',pres:['пью','пьёшь','пьёт','пьём','пьёте','пьют'],fut:['выпью','выпьешь','выпьет','выпьем','выпьете','выпьют'],obj:['kahve','кофе','который'],sub:['çay','adam','человек, который пьёт чай']},
+ yap:{tr:'yap',ru:'готовить',pres:['готовлю','готовишь','готовит','готовим','готовите','готовят'],fut:['приготовлю','приготовишь','приготовит','приготовим','приготовите','приготовят'],obj:['yemek','еда','которую'],sub:['yemek','aşçı','повар, который готовит еду']},
+ bekle:{tr:'bekle',ru:'ждать',pres:['жду','ждёшь','ждёт','ждём','ждёте','ждут'],fut:['буду ждать','будешь ждать','будет ждать','будем ждать','будете ждать','будут ждать'],obj:['otobüs','автобус','который'],sub:['otobüs','yolcu','пассажир, который ждёт автобус']},
+ gör:{tr:'gör',ru:'видеть',pres:['вижу','видишь','видит','видим','видите','видят'],fut:['увижу','увидишь','увидит','увидим','увидите','увидят'],obj:['rüya','сон','который'],sub:['kazayı','tanık','свидетель, который видел аварию']},
+ sev:{tr:'sev',ru:'любить',pres:['люблю','любишь','любит','любим','любите','любят'],fut:['полюблю','полюбишь','полюбит','полюбим','полюбите','полюбят'],obj:['şarkı','песня','которую'],sub:['seni','kız','девушка, которая тебя любит']}
+};
+var SUF={en:['-(y)en','делает само'],dik:['-dik + чей','другой · сейчас/было'],ecek:['-(y)ecek + чей','другой · потом']};
+var PER=[['ben','я'],['sen','ты'],['o','он / она'],['biz','мы'],['siz','вы'],['onlar','они']];
+var PRON=['я','ты','он','мы','вы','они'];
+var B={verb:'oku',suf:'dik',per:0};
+var VOW='aıoueiöü';
+function lastV(s){for(var i=s.length-1;i>=0;i--)if(VOW.indexOf(s[i])>=0)return s[i]}
+function h2(v){return 'aıou'.indexOf(v)>=0?'a':'e'}
+function h4(v){return {a:'ı',ı:'ı',o:'u',u:'u',e:'i',i:'i',ö:'ü',ü:'ü'}[v]}
+function isV(c){return VOW.indexOf(c)>=0}
+function build(){
+  var v=VB[B.verb],s=v.tr,endV=isV(s[s.length-1]),r={harm:true,y:false,dt:false,kg:false,soft:false},seg=[];
+  if(B.suf==='en'){
+    if(v.soft){seg.push(['soft',v.soft]);r.soft=true}else seg.push(['',s]);
+    if(endV){seg.push(['lk','y']);r.y=true}
+    seg.push(['sf en',h2(lastV(s))+'n']);
+    return {seg:seg,pre:v.sub[0],noun:v.sub[1],ru:v.sub[2],r:r,say:v.sub[0]+' '+(v.soft||s)+(endV?'y':'')+h2(lastV(s))+'n '+v.sub[1]};
+  }
+  var p=B.per,I,core,poss;
+  if(B.suf==='dik'){
+    seg.push(['',s]);
+    var D='çfhkpsşt'.indexOf(s[s.length-1])>=0?'t':'d';if(D==='t')r.dt=true;
+    I=h4(lastV(s));
+    if(p===5){core=D+I+'k';poss=(h2(I)==='a'?'ları':'leri')}
+    else{core=D+I+'ğ';r.kg=true;poss=[I+'m',I+'n',I,I+'m'+I+'z',I+'n'+I+'z'][p]}
+    seg.push(['sf dik',core]);seg.push(['ps',poss]);
+  }else{
+    if(v.soft){seg.push(['soft',v.soft]);r.soft=true}else seg.push(['',s]);
+    if(endV){seg.push(['lk','y']);r.y=true}
+    var A=h2(lastV(s));I=A==='a'?'ı':'i';
+    if(p===5){core=A==='a'?'acak':'ecek';poss=A==='a'?'ları':'leri'}
+    else{core=A==='a'?'acağ':'eceğ';r.kg=true;poss=[I+'m',I+'n',I,I+'m'+I+'z',I+'n'+I+'z'][p]}
+    seg.push(['sf ecek',core]);seg.push(['ps',poss]);
+  }
+  var verbRu=(B.suf==='dik'?v.pres:v.fut)[p];
+  var ru=v.obj[1]+', '+v.obj[2]+' '+PRON[p]+' '+verbRu+(B.suf==='dik'?' <span class="mute">(или в прошлом)</span>':'');
+  return {seg:seg,noun:v.obj[0],ru:ru,r:r,say:seg.map(function(x){return x[1]}).join('')+' '+v.obj[0]};
+}
+function ddInit(){
+  $$('.dd').forEach(function(dd){
+    var k=dd.dataset.k,list=$('.dd-list',dd),btn=$('.dd-btn',dd);
+    var items=k==='verb'?Object.keys(VB).map(function(x){return [x,VB[x].ru]}):k==='suf'?Object.keys(SUF).map(function(x){return [x,SUF[x][0],SUF[x][1]]}):PER.map(function(x,i){return [i,x[0],x[1]]});
+    list.innerHTML=items.map(function(it){return '<button data-v="'+it[0]+'">'+(k==='verb'?it[0]+'mek':it[1]).replace('okumek','okumak').replace('almek','almak').replace('yapmek','yapmak')+'<span>'+(k==='verb'?it[1]:it[2])+'</span></button>'}).join('');
+    btn.addEventListener('click',function(e){e.stopPropagation();var o=dd.classList.contains('open');$$('.dd').forEach(function(x){x.classList.remove('open')});if(!o)dd.classList.add('open')});
+    list.addEventListener('click',function(e){var b=e.target.closest('button');if(!b||b.disabled)return;B[k]=k==='per'?+b.dataset.v:b.dataset.v;dd.classList.remove('open');bldRender(true)});
+  });
+  document.addEventListener('click',function(){$$('.dd').forEach(function(x){x.classList.remove('open')})});
+}
+function inf(x){var v=lastV(x);return x+(h2(v)==='a'?'mak':'mek')}
+function bldRender(anim){
+  var o=build();
+  $('.dd[data-k=verb] .dd-btn span').textContent=inf(B.verb)+' · '+VB[B.verb].ru;
+  $('.dd[data-k=suf] .dd-btn span').textContent=SUF[B.suf][0];
+  $('.dd[data-k=per] .dd-btn span').textContent=B.suf==='en'?'само существительное':PER[B.per][0]+' · '+PER[B.per][1];
+  $$('.dd[data-k=per] .dd-list button').forEach(function(b){b.disabled=B.suf==='en'});
+  $$('.dd-list button').forEach(function(b){var k=b.closest('.dd').dataset.k;b.classList.toggle('on',String(B[k])===b.dataset.v)});
+  $$('.dd-list button').forEach(function(b){var k=b.closest('.dd').dataset.k;if(k==='verb')b.firstChild.textContent=inf(b.dataset.v)});
+  var w=$('#bldWord');w.innerHTML=(o.pre?'<span class="pre">'+o.pre+'</span>':'')+o.seg.map(function(s){return '<span class="'+s[0]+'">'+s[1]+'</span>'}).join('')+'<span class="noun">'+o.noun+'</span>';
+  $('#bldRu').innerHTML=o.ru;$('#bldSay').setAttribute('data-say',o.say);
+  var R=[['harm','Гармония гласных'],['y','После гласной — y'],['dt','Глухой звук: d → t'],['kg','Перед гласной: k → ğ'],['soft','git → gid перед гласной']];
+  $('#bldRules').innerHTML=R.map(function(x){return '<li class="'+(o.r[x[0]]?'on':'')+'"><i><svg><use href="#i-check"/></svg></i>'+x[1]+'</li>'}).join('')+(B.suf==='en'?'<li class="on"><i><svg><use href="#i-check"/></svg></i>-en не берёт «чей»</li>':'');
+  if(anim&&G){gsap.from($$('#bldWord span'),{yPercent:-60,rotation:function(i){return i%2?8:-8},duration:.6,ease:'back.out(2.5)',stagger:.05});gsap.from($$('#bldRules li.on i'),{scale:.4,duration:.5,ease:'back.out(3)',stagger:.06})}
+}
+ddInit();bldRender(false);
+$('#bldRnd').addEventListener('click',function(){var ks=Object.keys(VB),ss=Object.keys(SUF);B.verb=ks[Math.random()*ks.length|0];B.suf=ss[Math.random()*3|0];B.per=Math.random()*6|0;bldRender(true)});
+
+/* delete prepositions */
+var delDone=false;
+$('#delBtn').addEventListener('click',function(){
+  var lines=$$('#dlines .dl'),preps=$$('#dlines .prep'),btn=this,trash=btn.querySelector('.ic');
+  if(delDone){lines.forEach(function(l){l.classList.remove('done')});delDone=false;$('#delBtn span').textContent='Delete предлоги';$('#trashN').textContent='4';if(G)gsap.set(preps,{clearProps:'all'});return}
+  delDone=true;
+  function swap(){lines.forEach(function(l,i){setTimeout(function(){l.classList.add('done');if(G)gsap.from($('.tr',l),{y:14,rotation:-2,duration:.5,ease:'back.out(2.5)'})},i*140)});$('#delBtn span').textContent='Вернуть предлоги';$('#trashN').textContent='0'}
+  if(G){var tb=trash.getBoundingClientRect();var tl=gsap.timeline({onComplete:swap});
+    preps.forEach(function(p,i){var a=p.getBoundingClientRect();tl.to(p,{x:tb.left-a.left,y:tb.top-a.top,scale:.3,rotation:180,duration:.6,ease:'power2.in'},i*.1)});
+    tl.to(trash,{rotation:-18,yoyo:true,repeat:1,duration:.12})}
+  else swap();
+});
+
+/* trap */
+$('#trapSeg').addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;$$('#trapSeg button').forEach(function(x){x.classList.toggle('on',x===b)});var w=$('#trapW');w.className='tw '+b.dataset.q;
+  $('#trapNote').innerHTML=b.dataset.q==='q1'?'Сломалась машина. Не человек. Машина делает сама — значит, <b>-an</b>.':'Машина его. «Его» вешаем на машину: <b>arabası</b>. Не на глагол. Глагол остаётся с <b>-an</b>.';
+  if(G)gsap.from('#trapW span',{y:-8,duration:.4,ease:'back.out(3)',stagger:.04})});
+
+/* quiz */
+var Q=[
+ ['книга, которую ты дал','verdiğin kitap',['kitap hangi verdin','veren kitap'],'Книга ничего не даёт. Даёшь ты → -dik + -in. А hangi — это «какой?». Помним коридор.'],
+ ['студент, который читает','okuyan öğrenci',['okuduğu öğrenci','okuyacağım öğrenci'],'Читает сам студент → -en. Лица не нужны.'],
+ ['город, в который мы поедем','gideceğimiz şehir',['gidecek şehir','gittiğimiz şehir'],'Едем мы, потом → -ecek + -imiz. gittiğimiz — это «в который мы ездили».'],
+ ['гости, которые придут завтра','yarın gelecek misafirler',['yarın geleceğim misafirler','yarın geldiği misafirler'],'Гости приходят сами → «чей» не нужен. -ecek без окончания = делает само, но потом.'],
+ ['фильм, который я не видел','görmediğim film',['görmeyen film','görmeyeceğim film'],'Видел (не видел) я → -dik. Отрицание -me- встаёт перед суффиксом: gör-me-diğ-im.'],
+ ['машина, которую купил Али',"Ali'nin aldığı araba",["Ali'nin alan araba","Ali aldığım araba"],'Покупает Али → -dik + -ı (его). А сам Али получает -nin.']
+];
+var qi=0,qs=0,res=[];
+var d6=$('#dots6');d6.innerHTML=Q.map(function(){return '<div class="dot"><svg><use href="#i-check"/></svg></div>'}).join('')+'<p class="score" id="score"><b>0 / 6</b>правильных</p>';
+function shuffle(a){for(var i=a.length-1;i>0;i--){var j=Math.random()*(i+1)|0,t=a[i];a[i]=a[j];a[j]=t}return a}
+function qRender(){
+  if(qi>=Q.length){var msg=qs===6?'Шесть из шести. Сосед бы понял с первого раза. И не кричал бы.':qs>=4?'Почти. Соседи у вас терпеливые. Ещё круг — и будет шесть.':'Ничего. Я три минуты кричал hangi. Попробуйте ещё раз.';
+    $('#qn').textContent='Готово';$('#qq').textContent=qs+' из 6';$('#opts').innerHTML='';$('#qexp').textContent=msg;$('#qexp').classList.add('on');var n=$('#qnext');n.innerHTML='Ещё раз <svg class="ic"><use href="#i-repeat"/></svg>';n.classList.add('on');if(qs>=5)burst();return}
+  var q=Q[qi];$('#qn').textContent='Вопрос '+(qi+1)+' из 6 · как сказать';$('#qq').textContent='«'+q[0]+'»';
+  var o=shuffle([q[1]].concat(q[2]));$('#opts').innerHTML=o.map(function(x,i){return '<button class="opt" data-v="'+x.replace(/"/g,'&quot;')+'"><span class="k">'+'ABC'[i]+'</span>'+x+'</button>'}).join('');
+  $('#qexp').classList.remove('on');$('#qnext').classList.remove('on');$('#qnext').innerHTML='Дальше <svg class="ic"><use href="#i-arrow-right"/></svg>';
+  if(G)gsap.from('#opts .opt',{x:-16,duration:.45,ease:'power3.out',stagger:.06});
+}
+$('#opts').addEventListener('click',function(e){var b=e.target.closest('.opt');if(!b||b.disabled)return;var q=Q[qi],ok=b.dataset.v===q[1];
+  $$('#opts .opt').forEach(function(x){x.disabled=true;if(x.dataset.v===q[1])x.classList.add('ok')});if(!ok)b.classList.add('bad');
+  if(ok)qs++;var d=$$('#dots6 .dot')[qi];d.classList.add(ok?'ok':'bad');if(G)gsap.to(d,{scale:ok?1:.7,duration:.7,ease:'elastic.out(1,.4)'});else d.style.transform='scale('+(ok?1:.7)+')';
+  $('#score').innerHTML='<b>'+qs+' / 6</b>правильных';$('#qexp').innerHTML=(ok?'<b>Да.</b> ':'<b>Нет.</b> ')+q[3];$('#qexp').classList.add('on');$('#qnext').classList.add('on');speak(q[1])});
+$('#qnext').addEventListener('click',function(){if(qi>=Q.length){qi=0;qs=0;$$('#dots6 .dot').forEach(function(d){d.className='dot';d.style.transform='';if(G)gsap.set(d,{scale:.35})});$('#score').innerHTML='<b>0 / 6</b>правильных'}else qi++;qRender()});
+qRender();
+function burst(){var c=document.createElement('div');c.className='burst';document.body.appendChild(c);var cols=['#FF6FB2','#25D22F','#FFB420','#5B4CFF'];for(var i=0;i<40;i++){var d=document.createElement('i'),s=8+Math.random()*16;d.style.cssText='width:'+s+'px;height:'+s+'px;left:50%;top:50%;background:'+cols[i%4];c.appendChild(d);
+  if(G)gsap.to(d,{x:(Math.random()-.5)*innerWidth*.9,y:(Math.random()-.6)*innerHeight*.8,scale:0,duration:1.4+Math.random(),ease:'power3.out'})}setTimeout(function(){c.remove()},2600)}
+
+/* AD */
+$$('.trl').forEach(function(b){b.addEventListener('click',function(){b.classList.toggle('on');if(b.classList.contains('on'))speak(b.querySelector('.tk').textContent)})});
+var mon=$('#mon');
+if(mon){
+  function loadV(src,pst){mon.src=src;mon.poster=pst;var p=mon.play();if(p&&p.catch)p.catch(function(){})}
+  var vLoaded=false;whenVisible(mon,function(){if(!vLoaded){vLoaded=true;loadV(mon.dataset.src,mon.dataset.poster)}else{var p=mon.play();if(p&&p.catch)p.catch(function(){})}},function(){mon.pause()});
+  $('#vtabs').addEventListener('click',function(e){var b=e.target.closest('.chip');if(!b)return;$$('#vtabs .chip').forEach(function(x){x.classList.toggle('on',x===b)});$('#vurl').textContent=b.dataset.u;$('#vcap').textContent=b.dataset.c;vLoaded=true;loadV(b.dataset.v,b.dataset.p);if(G)gsap.from('.screen',{scale:.97,duration:.5,ease:'back.out(2)'})});
+  new IntersectionObserver(function(es,o){es.forEach(function(x){if(x.isIntersecting){if(!mon.getAttribute('poster'))mon.poster=mon.dataset.poster;o.disconnect()}})},{rootMargin:'900px 0px'}).observe(mon);
+}
+/* tiles marquee */
+var tt=$('#ttrack');if(tt){tt.innerHTML+=tt.innerHTML;if(G){var mq=gsap.fromTo(tt,{xPercent:0},{xPercent:-50,repeat:-1,ease:'none',duration:40});whenVisible(tt,function(){mq.play()},function(){mq.pause()})}}
+/* counters */
+$$('[data-count]').forEach(function(el){var n=+el.dataset.count;if(!G)return;var o={v:0};el.textContent='0';ScrollTrigger.create({trigger:el,start:'top 90%',once:true,onEnter:function(){gsap.to(o,{v:n,duration:1.6,ease:'power3.out',onUpdate:function(){el.textContent=Math.round(o.v)}})}})});
+if(G){gsap.from('.pc .gbar i',{height:0,duration:1.4,ease:'power3.out',scrollTrigger:{trigger:'.pc',start:'top 80%'}})}
+/* months chart */
+var mo=$('#months');
+if(mo){var M=['я','ф','м','а','м','и','и','а','с','о','н','д'];mo.innerHTML=M.map(function(m){return '<div><i></i><span>'+m+'</span></div>'}).join('');
+  function chart(mode){var bars=$$('#months i');bars.forEach(function(b,i){var h=mode==='once'?(i?6:30):Math.min(100,(i+1)*8.2);b.classList.toggle('z',mode==='once'&&i>0);if(G)gsap.to(b,{height:h+'%',duration:.7,ease:'back.out(1.6)',delay:i*.03});else b.style.height=h+'%'});
+    $('#payNote').innerHTML=mode==='once'?'€30 в январе. €0 в феврале. €0 в декабре. График скучный. Так и задумано.':'Если бы это была подписка, столбики росли бы каждый месяц. Это не подписка. Вернитесь на первую вкладку, там спокойнее.'}
+  $('#paySeg').addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;$$('#paySeg button').forEach(function(x){x.classList.toggle('on',x===b)});chart(b.dataset.m)});
+  chart('once');
+}
+/* final pills */
+if(G&&$('#finalPills')){gsap.from('#finalPills .pl',{rotationX:-90,y:30,duration:.9,ease:'back.out(2.2)',stagger:.12,scrollTrigger:{trigger:'#finalPills',start:'top 85%'}})}
+/* dock */
+var dock=$('#dock');
+if(dock){var heroEl=$('.hero'),fin=$('#final'),pastHero=false,atFinal=false;
+  function dk(){dock.classList.toggle('on',pastHero&&!atFinal)}
+  new IntersectionObserver(function(e){pastHero=!e[0].isIntersecting;dk()}).observe(heroEl);
+  new IntersectionObserver(function(e){atFinal=e[0].isIntersecting;dk()}).observe(fin);
+}
+/* lava click note for analytics-free tracking */
+$$('a.lava').forEach(function(a){a.addEventListener('click',function(){try{localStorage.setItem('alterna_lava_click',Date.now())}catch(e){}})});
+if(G){addEventListener('load',function(){ScrollTrigger.refresh()});if(document.fonts)document.fonts.ready.then(function(){ScrollTrigger.refresh()})}
+}
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',xInit);else xInit();
+</script>
+
+</body>
+</html>
